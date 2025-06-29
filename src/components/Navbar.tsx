@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Home, Menu, X, User } from 'lucide-react';
+import { ShoppingCart, Home, Menu, X, User, Settings } from 'lucide-react';
 
 interface NavbarProps {
   cartItemCount: number;
@@ -19,7 +19,8 @@ const Navbar = ({ cartItemCount }: NavbarProps) => {
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
     { to: "/faq", label: "FAQ" },
-    { to: "/account", label: "Account", icon: User }
+    { to: "/account", label: "Account", icon: User },
+    { to: "/admin", label: "Admin", icon: Settings }
   ];
 
   return (

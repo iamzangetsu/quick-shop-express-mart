@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -12,6 +13,7 @@ import FAQ from './pages/FAQ';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Account from './pages/Account';
+import Admin from './pages/Admin';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import NotFound from "./pages/NotFound";
@@ -73,6 +75,7 @@ const App = () => {
               <Route path="/terms" element={<Terms />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/account" element={<Account />} />
+              <Route path="/admin" element={<Admin />} />
               <Route 
                 path="/product/:id" 
                 element={<ProductDetail onAddToCart={handleAddToCart} />} 
